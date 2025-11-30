@@ -4,7 +4,7 @@ Tekijät: Karri Salonen ja Tuukka Mero
 
 ## Tomisto-ohjelma bundle
 
-Ensiksi luotiin repository yhteidelle projektille. Tehdään tyhjä README.md ja annetaan lisenssi GNU General Public License 3. Sitten kutsuttiin collaboratorit repoon.  
+Ensiksi luotiin repository yhteiselle projektille. Tehdään tyhjä README.md ja annetaan lisenssi GNU General Public License 3. Sitten kutsuttiin collaboratorit repoon.  
 
 Sitten oli aika kloonata repo koneelle.
 
