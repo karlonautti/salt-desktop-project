@@ -1,20 +1,23 @@
+# /srv/salt/office/init.sls
+
+apt-update:
+  cmd.run:
+    - name: sudo apt-get update
+
 # LibreOffice
 libreoffice:
   pkg.installed: []
 
-# Firefox
-firefox:
+snapd:
   pkg.installed: []
 
-# Teams
-teams-deb-download:
-  file.managed:
-    - name: /tmp/teams.deb
-    - source: https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.5.00.23861_amd64.deb
-    - skip_verify: True
-
-teams-deb-install:
+# Firefox
+firefox:
   cmd.run:
-    - name: dpkg -i /tmp/teams.deb || apt-get -f install -y
-    - require:
-      - file: teams-deb-download
+    - name: snap install firefox
+
+# Teams for linux
+teams-for-linux:
+  cmd.run:
+    - name: snap install teams-for-linux
+    - unless: snap list teams-for-linux
