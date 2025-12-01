@@ -2,7 +2,7 @@
 
 Tekijät: Karri Salonen ja Tuukka Mero
 
-## Tomisto-ohjelma bundle
+## Toimisto-ohjelma bundle
 
 Ensiksi luotiin repository yhteiselle projektille. Tehdään tyhjä README.md ja annetaan lisenssi GNU General Public License 3. Sitten kutsuttiin collaboratorit repoon.  
 
